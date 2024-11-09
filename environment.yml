@@ -7,6 +7,7 @@ dependencies:
   - matplotlib
   - ase
   - dscribe
+  - ipykernel
   - scipy
   - seaborn
   - pandas
