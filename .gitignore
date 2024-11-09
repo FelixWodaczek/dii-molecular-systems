@@ -1,0 +1,21 @@
+.vscode
+.ipynb_checkpoints
+
+# Binaries
+*.pdf
+*.png
+*.svg
+*.zip
+*.pkl
+*.npy
+*.pickle
+
+# Datafiles
+*.dat
+*.xyz
+*.mat
+*.txt
+
+# Python binaries
+*.egg-info
+**/__pycache__/**

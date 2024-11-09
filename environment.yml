@@ -1,0 +1,15 @@
+name: dii_ms
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - numpy
+  - matplotlib
+  - ase
+  - dscribe
+  - scipy
+  - seaborn
+  - pandas
+  - pip
+  - pip:
+    - dadapy==0.3.1
