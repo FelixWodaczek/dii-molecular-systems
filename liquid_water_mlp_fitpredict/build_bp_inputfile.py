@@ -7,10 +7,10 @@ class FileSystemCreator:
     def __init__(self, target_path:pathlib.Path, data_dir=None, weights_path=None):
         self.target_path: pathlib.Path = pathlib.Path(target_path).resolve()
         if data_dir is None:
-            data_dir = pathlib.Path(__file__).resolve().parent.parent.joinpath('data')
+            data_dir = pathlib.Path(__file__).resolve().parent.joinpath('data')
         self.data_dir = data_dir
 
-        self.mask_dir = self.data_dir.joinpath('n2p2_fitting/run_pot/')
+        self.mask_dir = self.data_dir.joinpath('mlp_training/mask_files/')
 
         if weights_path is None:
             weights_path = self.data_dir.joinpath('water_phase_store/lasso_gammas_hartbohr_lambda.npy')
@@ -67,8 +67,8 @@ class FileSystemCreator:
             input_header = f.read()
             f.close()
 
-        g2_params = np.loadtxt(self.data_dir.joinpath('ice_in_water_data/g2_params_gridsearch_bohr_lambda.txt'))
-        g4_params = np.loadtxt(self.data_dir.joinpath('ice_in_water_data/g4_params_gridsearch_bohr_lambda.txt'))
+        g2_params = np.loadtxt(self.data_dir.joinpath('ice_and_water_data/g2_params.txt'))
+        g4_params = np.loadtxt(self.data_dir.joinpath('ice_and_water_data/g4_params.txt'))
 
         if (self.weights_path.suffix == '.npy') or (self.weights_path.suffix == '.np'):
             lasso_gammas = np.load(self.weights_path)[nfeatures]
@@ -119,18 +119,14 @@ class FileSystemCreator:
         print(f"Built input file from {counter} symmetry functions using {nfeatures}.")
 
 def main():
-    ndatas = [90, 128, 181, 256]
-    nfeat = 10
-    data_path = pathlib.Path(__file__).resolve().parent.parent.joinpath('data')
-    for ndata in ndatas:
-        weights_path = data_path.joinpath(
-            f'water_phase_store/weights_per_nfeatures_ndata_{ndata}.txt'
-        )
-        target_path = data_path.joinpath(f'n2p2_fitting/240805_pot_si_ndatas/ndata_{ndata}_nfeat_{nfeat}')
+    nfeats = [10, 18, 25, 38, 50, 176]
+    data_path = pathlib.Path(__file__).resolve().parent.joinpath('data')
+    for nfeat in nfeats:
+        target_path = data_path.joinpath(f'mlp_training/pot_acsf_{nfeat}')
         if not target_path.exists():
             target_path.mkdir()
         fs_creator = FileSystemCreator(
-            target_path=target_path, data_dir=data_path, weights_path=weights_path
+            target_path=target_path, data_dir=data_path
         )
         fs_creator.copy_datafile()
         fs_creator.copy_runfile(nfeat)
