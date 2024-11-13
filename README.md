@@ -5,7 +5,7 @@ Source code of data pipelines "(Automatic feature selection and weighting in mol
 
 1) Ideally, create this `conda` environment to run these notebooks in. To install the environment 'dii_ms', which includes the version of DADApy of the publication:
 ```bash
-conda env create dii_ms -f environment.yml
+conda env create -f environment.yml
 ```
 Alternatively, install the dependencies listed in the `environment.yml` using the environment manager of your choice (eg. `pip`).
 
