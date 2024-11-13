@@ -14,11 +14,10 @@ Alternatively, install the dependencies listed in the `environment.yml` using th
 python -m ipykernel install --user --name dii_ms
 ```
 
-3) Analyze the jupyter notebooks. Data files of precalculated results were too large to store here and can be downloaded from OSF, see below.
+3) Analyze the jupyter notebooks. Data files necessary for calculations, and of precalculated results, were too large to store here and can be downloaded from OSF, fron the corresponding folders (see below).
 
 
 ## Source Data
-A .zip folder with the data for all plots in this paper can be found here in PLOT_DATA.
 All source data is located in an (OSF Repository)[https://osf.io/swtg5/].
 Download it and add the contained data to the individual directories.
 
