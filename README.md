@@ -21,6 +21,15 @@ python -m ipykernel install --user --name dii_ms
 All source data is located in an (OSF Repository)[https://osf.io/swtg5/].
 Download it and add the contained data to the individual directories.
 
+### liquid_water_mlp_fitpredict
+- Place the contents of the OSF repository in the directory `liquid_water_mlp_fitpredict/data`.
+- There is already generated ACSF and SOAPs in `water_phase_store`.
+    To generate new descriptors run `python make_descriptors.py`.
+- Run `water_descriptors.ipynb` to remake the plot by loading the pregenerated results from `water_descriptors.ipynb`.
+    Alternatively, you can perform feature selection on your own by executing the middle cells.
+- `build_bp_inputfile.py` allows for automatic creation of input files from calculated weights.
+    It is not cleanly written so use at your own risk.
+
 ## TODOs
-- [ ] Remove old files from water_phases and check if imports work correctly
+- [x] Remove old files from water_phases and check if imports work correctly
 - [ ] in final iteration add compiled versions of all jupyter notebooks
