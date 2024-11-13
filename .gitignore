@@ -5,16 +5,16 @@
 *.pdf
 *.png
 *.svg
-*.zip
+#*.zip
 *.pkl
-*.npy
+#*.npy
 *.pickle
 
 # Datafiles
-*.dat
-*.xyz
+#*.dat
+#*.xyz
 *.mat
-*.txt
+#*.txt
 
 # Python binaries
 *.egg-info

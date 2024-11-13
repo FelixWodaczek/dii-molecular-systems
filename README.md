@@ -3,19 +3,25 @@ Source code of data pipelines "(Automatic feature selection and weighting in mol
 
 ## Installation
 
-Ideally, create a separate `conda` environment to run these notebooks in.
+1) Ideally, create this `conda` environment to run these notebooks in. To install the environment 'dii_ms', which includes the version of DADApy of the publication:
 ```bash
 conda env create dii_ms -f environment.yml
 ```
-
 Alternatively, install the dependencies listed in the `environment.yml` using the environment manager of your choice (eg. `pip`).
 
-## Source Data
+2) Make a jupyter kernel from this environment for the subsequent analysis in jupyter notebooks:
+```bash
+python -m ipykernel install --user --name dii_ms
+```
 
-All source data is located in an (OSF Repository)[].
+3) Analyze the jupyter notebooks. Data files of precalculated results were too large to store here and can be downloaded from OSF, see below.
+
+
+## Source Data
+A .zip folder with the data for all plots in this paper can be found here in PLOT_DATA.
+All source data is located in an (OSF Repository)[https://osf.io/swtg5/].
 Download it and add the contained data to the individual directories.
 
 ## TODOs
-- [ ] Add add DOI of OSF above
 - [ ] Remove old files from water_phases and check if imports work correctly
 - [ ] in final iteration add compiled versions of all jupyter notebooks
