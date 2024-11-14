@@ -8,9 +8,11 @@ dependencies:
   - ase
   - dscribe
   - ipykernel
+  - notebook
   - scipy
   - seaborn
   - pandas
+  - scikit-image
   - pip
   - pip:
     - git+https://github.com/sissa-data-science/DADApy@v0.3.2
