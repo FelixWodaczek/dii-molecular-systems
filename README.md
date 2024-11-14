@@ -1,5 +1,5 @@
 # Differentiable Information Imbalance in Molecular Systems
-Source code of data pipelines "(Automatic feature selection and weighting in molecular systems using Differentiable Information Imbalance)[https://doi.org/10.48550/arXiv.2411.00851]".
+Source code of data pipelines "[Automatic feature selection and weighting in molecular systems using Differentiable Information Imbalance](https://doi.org/10.48550/arXiv.2411.00851)".
 
 ## Installation
 
@@ -7,7 +7,8 @@ Source code of data pipelines "(Automatic feature selection and weighting in mol
 ```bash
 conda env create -f environment.yml
 ```
-Alternatively, install the dependencies listed in the `environment.yml` using the environment manager of your choice (eg. `pip`).
+If you are a `pip` user feel free to install the dependencies in `requirements.txt` into a VENV or anywhere else.
+Alternatively, install the dependencies listed in the `environment.yml` using the environment manager of your choice.
 
 2) Make a jupyter kernel from this environment for the subsequent analysis in jupyter notebooks:
 ```bash
@@ -18,8 +19,13 @@ python -m ipykernel install --user --name dii_ms
 
 
 ## Source Data
-All source data is located in an OSF Repository [https://osf.io/swtg5/].
+All source data is located in an OSF Repository: https://osf.io/swtg5/.
 Download it and add the contained data to the individual directories.
+
+### CLN025 and Gaussian_random_variables_and_monomials
+- Download all data files and folders from OSF and copy the missing large data files into the corresponding folder of this project.
+- You can choose to use pre-calculated results for the plots or do the calculations. They may take several hours.
+- Ignore warning messages about maxk. The DADApy project is under active development and you may chose to use newer versions instead of the here specified release 0.3.2.
 
 ### liquid_water_mlp_fitpredict
 - Place the contents of the OSF repository in the directory `liquid_water_mlp_fitpredict/data`.
@@ -29,11 +35,6 @@ Download it and add the contained data to the individual directories.
     Alternatively, you can perform feature selection on your own by executing the middle cells.
 - `build_bp_inputfile.py` allows for automatic creation of input files from calculated weights.
     It is not cleanly written so use at your own risk.
-
-### CLN025 and Gaussian_random_variables_and_monomials
-- Download all data files and folders from OSF and copy the missing large data files into the corresponding folder of this project.
-- You can choose to use pre-calculated results for the plots or do the calculations. They may take several hours.
-- Ignore warning messages about maxk. The DADApy project is under active development and you may chose to use newer versions instead of the here specified release 0.3.2.
 
 
 
