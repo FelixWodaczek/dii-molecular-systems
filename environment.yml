@@ -13,4 +13,4 @@ dependencies:
   - pandas
   - pip
   - pip:
-    - dadapy==0.3.2
+    - git+https://github.com/sissa-data-science/DADApy@v0.3.2
