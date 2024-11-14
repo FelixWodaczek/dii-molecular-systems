@@ -18,7 +18,7 @@ python -m ipykernel install --user --name dii_ms
 
 
 ## Source Data
-All source data is located in an (OSF Repository)[https://osf.io/swtg5/].
+All source data is located in an OSF Repository [https://osf.io/swtg5/].
 Download it and add the contained data to the individual directories.
 
 ### liquid_water_mlp_fitpredict
@@ -30,6 +30,10 @@ Download it and add the contained data to the individual directories.
 - `build_bp_inputfile.py` allows for automatic creation of input files from calculated weights.
     It is not cleanly written so use at your own risk.
 
-## TODOs
-- [x] Remove old files from water_phases and check if imports work correctly
-- [ ] in final iteration add compiled versions of all jupyter notebooks
+### CLN025 and Gaussian_random_variables_and_monomials
+- Download all data files and folders from OSF and copy the missing large data files into the corresponding folder of this project.
+- You can choose to use pre-calculated results for the plots or do the calculations. They may take several hours.
+- Ignore warning messages about maxk. The DADApy project is under active development and you may chose to use newer versions instead of the here specified release 0.3.2.
+
+
+
