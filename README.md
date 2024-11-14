@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/885963051.svg)](https://doi.org/10.5281/zenodo.14161759)
+
 # Differentiable Information Imbalance in Molecular Systems
 Source code of data pipelines "[Automatic feature selection and weighting in molecular systems using Differentiable Information Imbalance](https://doi.org/10.48550/arXiv.2411.00851)".
 
