@@ -15,4 +15,4 @@ dependencies:
   - scikit-image
   - pip
   - pip:
-    - git+https://github.com/sissa-data-science/DADApy@v0.3.2
+    - dadapy==0.3.2

@@ -24,3 +24,6 @@
 # Python binaries
 *.egg-info
 **/__pycache__/**
+
+# Un-ignore
+!requirements.txt
