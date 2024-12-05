@@ -1,0 +1,23 @@
+cff-version: 1.0.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Wild"
+  given-names: "Romina"
+  orcid: "0009-0002-3383-1655"
+- family-names: "Del Tatto"
+  given-names: "Vittorio"
+  orcid: "0000-0002-8182-6212"
+- family-names: "Wodaczek"
+  given-names: "Felix"
+  orcid: "0009-0000-1457-795X"
+- family-names: "Cheng"
+  given-names: "Bingqing"
+  orcid: "0000-0002-3584-9632"
+- family-names: "Laio"
+  given-names: "Alessandro"
+  orcid: "0000-0001-9164-7907"
+title: "dii-molecular-systems"
+version: 1.0.1
+doi: 10.5281/zenodo.14277899
+date-released: 2024-12-04
+url: "https://github.com/FelixWodaczek/dii-molecular-systems"
